@@ -1,0 +1,175 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Define custom colors - more professional dark blue
+\definecolor{linkcolor}{HTML}{000000}  % Changed to black for better professionalism
+\definecolor{sectioncolor}{HTML}{000000}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{sectioncolor}
+}{}{0em}{}[\color{sectioncolor}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\color{linkcolor}#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{\color{linkcolor}#1} & \textbf{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \textbf{\scshape Rachid El Ismaiyly}} \\ \vspace{1pt}
+    {\Large \textcolor{sectioncolor}{Software Developer}} \\ \vspace{3pt}
+    \small 
+    \faMapMarker\ Taounate, Morocco \ | \ 
+    \faPhone\ +212611563140 \ | \ 
+    \faEnvelope\ \href{mailto:relismaiyly@gmail.com}{\textcolor{linkcolor}{relismaiyly@gmail.com}} \ | \
+    \faLinkedin\ \href{https://www.linkedin.com/in/rachid-el-isamiyly}{\textcolor{linkcolor}{LinkedIn}} \ | \
+    \faGithub\ \href{https://github.com/rel-isma}{\textcolor{linkcolor}{GitHub}}
+\end{center}
+
+\section{Summary}
+Full-Stack Developer with proven experience in React.js, TypeScript, and Django through hands-on projects. Strong foundation in system programming and network development. Currently advancing technical skills at 1337 School (42 Network). Seeking an internship to contribute to innovative development projects while expanding expertise in web and system development.
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ft\_transcendence} $|$ \emph{React, TypeScript, Django, DRF}}{(Expected completion: December 2024)}
+\resumeItemListStart
+\resumeItem{Developing a full-stack web application featuring real-time multiplayer ping pong game using React, TypeScript, and Django}
+\resumeItem{Designed and implemented an interactive dashboard displaying user statistics, match history, and achievement tracking}
+\resumeItem{Built a real-time chat system with private messaging, and friend management features}
+\resumeItem{Implemented secure WebSocket connections for seamless real-time game and chat communication}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Prayer Times Web App} $|$ \emph{React.js, RESTful APIs}}{July 2024 - August 2024}
+\resumeItemListStart
+\resumeItem{Developed a responsive web application using React.js to display prayer times based on geolocation}
+\resumeItem{Integrated external APIs for accurate prayer time calculations and location services}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Inception} $|$ \emph{Docker Containerization, Docker compose}}{May 2024 - June 2024}
+\resumeItemListStart
+\resumeItem{Developed a scalable web infrastructure using Docker containers, including NGINX, WordPress, and MariaDB}
+\resumeItem{Implemented secure web server configuration with TLSv1.2/TLSv1.3 encryption}
+\resumeItem{Configured data persistence using Docker volumes for WordPress database and website files}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{IRC Server Implementation} $|$ \emph{C++98, Network Programming}}{March 2024 - April 2024}
+\resumeItemListStart
+\resumeItem{Built a fully functional IRC server handling multiple client connections with non-blocking I/O}
+\resumeItem{Implemented robust error handling and connection management systems}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Net\_Practice} $|$ \emph{TCP/IP, Network Configuration}}{September 2023}
+\resumeItemListStart
+\resumeItem{Configured and troubleshot complex network topologies using TCP/IP protocols}
+\resumeItem{Implemented efficient subnetting solutions for optimized network performance}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Minishell} $|$ \emph{C}}{July 2023 - August 2023}
+\resumeItemListStart
+\resumeItem{Built a mini shell using C, handling user commands, signals, and processes}
+\resumeItem{Overcame challenges related to memory management and process synchronization}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Philosophers} $|$ \emph{C}}{June 2023 - July 2023}
+\resumeItemListStart
+\resumeItem{Implemented a solution to the classic dining philosophers problem using C}
+\resumeItem{Demonstrated proficiency in multi-threading, mutex locks, and process synchronization}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Frontend Development:} React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Responsive Design \\
+        \textbf{Backend Development:} Django, Django REST Framework, WebSocket \\
+        \textbf{Development Tools:} Git, Docker, Figma, Visual Studio Code \\
+        \textbf{Programming Languages:} C++, C, Bash \\
+        \textbf{Other Skills:} UX Design, Network Programming, System Design
+    }}
+\end{itemize}
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{1337 School (42 Network)}{Sep 2022 - Present}
+{Intensive Computer Science Program}{Khouribga, Morocco}
+\resumeItemListStart
+\resumeItem{Selected for highly competitive coding school affiliated with École 42 Paris}
+\resumeItem{Completed advanced projects in system programming, algorithms, and web development}
+\resumeItem{Practiced peer learning and code review in an intensive project-based environment}
+\resumeItemListEnd
+
+\resumeSubheading
+{Baccalaureate in Life and Earth Sciences}{2020 - 2021}
+{High School Diploma}{Taounate, Morocco}
+
+\resumeSubHeadingListEnd
+
+\end{document}
