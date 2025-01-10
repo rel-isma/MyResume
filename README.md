@@ -21,7 +21,7 @@ To build this resume, you'll need either:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/[your-username]/latex-resume
+git clone https://github.com/rel-isma/latex-resume
 cd latex-resume
 ```
 
